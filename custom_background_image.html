@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)file:///C:/Users/hp/Downloads/wallpaper/New%20folder/New%20Tab_files/custom_background_image.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <style>
+      html,
+      body,
+      #image,
+      #gradient {
+        height: 100%;
+        width: 100%;
+      }
+
+      #image,
+      #gradient {
+        position: fixed;
+        top: 0;
+      }
+
+      body {
+        margin: 0;
+        opacity: 0;
+        transition: opacity 700ms;
+      }
+
+      body[shown] {
+        opacity: 1;
+      }
+
+      #image {
+        background-image: url(https://lh4.googleusercontent.com/proxy/t6n9IMffQ-au8SvIYeVuB7e7EhTq2sQ7jexg_OSHnD820Ig9Y-SeeJEmbhYMNqCKSEd8IacM6yREbbCHnmK8ZIKnRVhrs2SBjYpaxQ=w3840-h2160-p-k-no-nd-mv);
+        background-position: center center;
+        background-repeat: no-repeat no-repeat;
+        background-size: cover;
+      }
+
+      #gradient {
+        background: radial-gradient(transparent 50%, black),
+            linear-gradient(transparent, black);
+        display: inherit;
+        opacity: .2;
+      }
+    </style>
+  </head>
+  <body shown="">
+    <script src="chrome-untrusted://new-tab-page/background_image.js"></script>
+    <!-- The img tag purely exists to capture the load event. -->
+    <img src="./custom_background_image_files/unnamed.jpg" onload="onImageLoad()" hidden="">
+    <div id="image"></div>
+    <div id="gradient"></div>
+  
+
+</body></html>
